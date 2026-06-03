@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bext — Сертификат алдын ала қарау</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, system-ui, sans-serif;
+        background: #f4f4f5;
+        color: #111827;
+        padding: 24px;
+      }
+      .wrap { max-width: 900px; margin: 0 auto; }
+      h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 8px; }
+      p { color: #6b7280; margin: 0 0 20px; font-size: 0.9rem; }
+      .preview {
+        background: #fff;
+        border-radius: 12px;
+        padding: 12px;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      button, a.btn {
+        padding: 10px 18px;
+        border-radius: 10px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+      }
+      .primary {
+        background: #111827;
+        color: white;
+      }
+      .primary:hover { background: #374151; }
+      .secondary {
+        background: #fff;
+        color: #374151;
+        border: 1px solid #e5e7eb;
+      }
+      .note { font-size: 0.75rem; color: #9ca3af; margin-top: 16px; }
+    </style>
+    <script type="module" crossorigin src="/assets/certificatePreview-xNZjDvpH.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/achievementCertificate-StMgcfam.js">
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Сертификат — алдын ала қарау</h1>
+      <p>Мысал деректермен жасалған PNG (нақты прогресс емес).</p>
+      <div class="preview">
+        <img id="cert" alt="Bext сертификаты" />
+      </div>
+      <div class="actions">
+        <button type="button" class="primary" id="download">PNG жүктеу</button>
+        <a class="btn secondary" href="/">← Қосымшаға оралу</a>
+      </div>
+      <p class="note">Нақты сертификат «Менің жетістіктерім» бөлімінде прогресс талаптары орындалғанда бөлісіледі.</p>
+    </div>
+  </body>
+</html>

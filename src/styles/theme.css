@@ -1,0 +1,306 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+
+  /* Bext Day Mode Colors - Clean & Professional */
+  --background: #FAFBFC;
+  --foreground: #0D1117;
+  --card: rgba(255, 255, 255, 0.8);
+  --card-foreground: #0D1117;
+  --popover: rgba(255, 255, 255, 0.98);
+  --popover-foreground: #0D1117;
+  --primary: #7C3AED;
+  --primary-foreground: #ffffff;
+  --secondary: #F3F4F6;
+  --secondary-foreground: #0D1117;
+  --muted: #E5E7EB;
+  --muted-foreground: #6B7280;
+  --accent: #7C3AED;
+  --accent-foreground: #ffffff;
+  --destructive: #EF4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(255, 255, 255, 0.7);
+  --input-background: rgba(255, 255, 255, 0.7);
+  --switch-background: #D1D5DB;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #7C3AED;
+  --chart-1: #7C3AED;
+  --chart-2: #EC4899;
+  --chart-3: #06B6D4;
+  --chart-4: #10B981;
+  --chart-5: #F59E0B;
+  --radius: 0.75rem;
+  --sidebar: rgba(255, 255, 255, 0.6);
+  --sidebar-foreground: #0D1117;
+  --sidebar-primary: #7C3AED;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(124, 58, 237, 0.1);
+  --sidebar-accent-foreground: #7C3AED;
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  --sidebar-ring: #7C3AED;
+
+  /* Glass effects */
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(124, 58, 237, 0.1);
+
+  /* Glow effects */
+  --glow-primary: 0 0 20px rgba(124, 58, 237, 0.35), 0 0 60px rgba(124, 58, 237, 0.15);
+  --glow-primary-sm: 0 0 10px rgba(124, 58, 237, 0.3), 0 0 30px rgba(124, 58, 237, 0.12);
+  --glow-primary-xs: 0 0 6px rgba(124, 58, 237, 0.25);
+  --glow-send-btn: 0 0 16px rgba(124, 58, 237, 0.5), 0 0 40px rgba(124, 58, 237, 0.2);
+  --glow-card: 0 0 0 1px rgba(124, 58, 237, 0.12), 0 4px 24px rgba(124, 58, 237, 0.08);
+  --glow-input-focus: 0 0 0 2px rgba(124, 58, 237, 0.2), 0 0 20px rgba(124, 58, 237, 0.1);
+}
+
+.dark {
+  /* Bext Night Mode Colors - Eye-friendly & Premium */
+  --background: #0D1B2A;
+  --foreground: #E8EAED;
+  --card: rgba(20, 35, 55, 0.8);
+  --card-foreground: #E8EAED;
+  --popover: rgba(20, 35, 55, 0.95);
+  --popover-foreground: #E8EAED;
+  --primary: #8B5CF6;
+  --primary-foreground: #0D1B2A;
+  --secondary: #1F3A52;
+  --secondary-foreground: #E8EAED;
+  --muted: #364A63;
+  --muted-foreground: #9CA3AF;
+  --accent: #8B5CF6;
+  --accent-foreground: #0D1B2A;
+  --destructive: #F87171;
+  --destructive-foreground: #0D1B2A;
+  --border: rgba(255, 255, 255, 0.12);
+  --input: rgba(20, 35, 55, 0.7);
+  --input-background: rgba(20, 35, 55, 0.7);
+  --ring: #8B5CF6;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #8B5CF6;
+  --chart-2: #EC4899;
+  --chart-3: #06B6D4;
+  --chart-4: #10B981;
+  --chart-5: #F59E0B;
+  --sidebar: rgba(20, 35, 55, 0.6);
+  --sidebar-foreground: #E8EAED;
+  --sidebar-primary: #8B5CF6;
+  --sidebar-primary-foreground: #0D1B2A;
+  --sidebar-accent: rgba(139, 92, 246, 0.12);
+  --sidebar-accent-foreground: #8B5CF6;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #8B5CF6;
+
+  /* Glass effects - dark */
+  --glass-bg: rgba(20, 35, 55, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  /* Glow effects - dark (stronger, more visible) */
+  --glow-primary: 0 0 24px rgba(139, 92, 246, 0.55), 0 0 70px rgba(139, 92, 246, 0.25);
+  --glow-primary-sm: 0 0 14px rgba(139, 92, 246, 0.5), 0 0 36px rgba(139, 92, 246, 0.2);
+  --glow-primary-xs: 0 0 8px rgba(139, 92, 246, 0.45);
+  --glow-send-btn: 0 0 20px rgba(139, 92, 246, 0.7), 0 0 50px rgba(139, 92, 246, 0.35);
+  --glow-card: 0 0 0 1px rgba(139, 92, 246, 0.2), 0 4px 30px rgba(139, 92, 246, 0.15);
+  --glow-input-focus: 0 0 0 2px rgba(139, 92, 246, 0.35), 0 0 24px rgba(139, 92, 246, 0.18);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-display);
+  }
+
+  code, pre {
+    font-family: var(--font-mono);
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--muted);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--muted-foreground);
+  }
+
+  /* Glass morphism utilities */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+
+  /* ── Glow utilities ───────────────────────────── */
+  .glow-logo {
+    box-shadow: var(--glow-primary-sm);
+    transition: box-shadow 0.3s ease;
+  }
+  .glow-logo:hover {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-btn {
+    transition: box-shadow 0.25s ease, transform 0.15s ease;
+  }
+  .glow-btn:hover {
+    box-shadow: var(--glow-primary-sm);
+  }
+
+  .glow-send {
+    transition: box-shadow 0.25s ease;
+  }
+  .glow-send:hover:not(:disabled) {
+    box-shadow: var(--glow-send-btn);
+  }
+
+  .glow-active-nav {
+    box-shadow: var(--glow-primary-xs);
+  }
+
+  .glow-input-wrap:focus-within {
+    box-shadow: var(--glow-input-focus);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .glow-card-hover {
+    transition: box-shadow 0.25s ease, transform 0.2s ease;
+  }
+  .glow-card-hover:hover {
+    box-shadow: var(--glow-card);
+    transform: translateY(-1px);
+  }
+
+  /* Ambient background blobs */
+  @keyframes blob-drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%       { transform: translate(30px, -20px) scale(1.05); }
+    66%       { transform: translate(-20px, 15px) scale(0.97); }
+  }
+  .ambient-blob {
+    animation: blob-drift 12s ease-in-out infinite;
+    will-change: transform;
+  }
+  .ambient-blob-2 {
+    animation: blob-drift 16s ease-in-out infinite reverse;
+    will-change: transform;
+  }
+
+  /* Text selection */
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+}

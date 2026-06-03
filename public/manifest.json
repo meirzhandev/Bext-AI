@@ -1,0 +1,11 @@
+{
+  "name": "Bext AI — ҰБТ оқу ассистенті",
+  "short_name": "Bext AI",
+  "description": "Бұл сайт ҰБТ-ға дайындыққа арналған қазақ тіліндегі оқу ассистенті. Математика мен информатикаға ерекше назар аударыңыз.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f223b",
+  "theme_color": "#7C3AED",
+  "orientation": "portrait",
+  "icons": []
+}
